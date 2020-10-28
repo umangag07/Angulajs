@@ -1,0 +1,102 @@
+ [
+        {
+            "state" :"Andaman and Nicobar Islands",
+            "Capital":"Port Blair",
+            "Population_Density":"46/sq km",
+            "Area":"3185",
+            "Avg_Temp":"30",
+            "Min_Temp":"10",
+            "Max_Temp":"42"
+             
+        },
+        {
+            "state" :"Andhra Pradesh",
+            "Capital":"Hyderabad (Proposed Capital Amaravati)",
+            "Population_Density":"416/sq km",
+            "Area":"6578",
+            "Avg_Temp":"34",
+            "Min_Temp":"12",
+            "Max_Temp":"45"
+        },
+        {
+            "state" :"Arunachal Pradesh",
+            "Capital":"Itanagar",
+            "Population_Density":"512/sq km",
+            "Area":"4331",
+            "Avg_Temp":"25",
+            "Min_Temp":"8",
+            "Max_Temp":"38"
+        },
+        {
+            "state" :"Assam",
+            "Capital":"Dispur",
+            "Population_Density":"219/sq km",
+            "Area":"4199",
+            "Avg_Temp":"22",
+            "Min_Temp":"4",
+            "Max_Temp":"39"
+        },
+        {
+            "state" :"Bihar", 
+            "Capital":"patna",
+            "Population_Density":"600/sq km",
+            "Area":"8185",
+            "Avg_Temp":"27",
+            "Min_Temp":"6",
+            "Max_Temp":"41"
+        },
+        {
+            "state" :"Chhattisgarh",
+            "Capital":"Raipur",
+            "Population_Density":"190/sq km",
+            "Area":"2185",
+            "Avg_Temp":"24",
+            "Min_Temp":"8",
+            "Max_Temp":"37"
+        },
+        {
+            "state" :"Dadra and Nagar Haveli",
+            "Capital":"Daman",
+            "Population_Density":"30/sq km",
+            "Area":"4988",
+            "Avg_Temp":"26",
+            "Min_Temp":"6",
+            "Max_Temp":"36"
+        },
+        {
+            "state" :"Daman and Diu",
+            "Capital":"Daman",
+            "Population_Density":"22/sq km",
+            "Area":"1999",
+            "Avg_Temp":"30",
+            "Min_Temp":"4",
+            "Max_Temp":"40"
+        },
+        {
+            "state" :"Delhi",
+            "Capital":"Delhi",
+            "Population_Density":"700/sq km",
+            "Area":"1185",
+            "Avg_Temp":"33",
+            "Min_Temp":"7",
+            "Max_Temp":"43"
+        },
+        {
+            "state" :"Goa",
+            "Capital":"Panaji",
+            "Population_Density":"100/sq km",
+            "Area":"4120",
+            "Avg_Temp":"22",
+            "Min_Temp":"5",
+            "Max_Temp":"33"
+        },
+        {
+            "state" :"Gujarat",
+            "Capital":"Gandhinagar",
+            "Population_Density":"612/sq km",
+            "Area":"6589",
+            "Avg_Temp":"31",
+            "Min_Temp":"2",
+            "Max_Temp":"47"
+        }
+    ]
