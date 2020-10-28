@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <style>
+    table{
+      border: 5px solid black;
+    }
+</style>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="customersCtrl">
+      <table >
+        <tr>
+          <th>INDEX</th>
+          <th ng-click="orderByMe('state')">STATE</th>
+          <th ng-click="orderByMe('Capital')">CAPITAL</th>
+          <th ng-click="orderByMe('Population_Density')">Population density</th>
+          <th ng-click="orderByMe('Area')">AREa</th>
+          <th ng-click="orderByMe('Avg_Temp')">AVG TEmperature</th>
+          <th ng-click="orderByMe('Min_Temp')">MIN Temperatire</th>
+          <th ng-click="orderByMe('Max_Temp')">MAX Temperatire</th>
+        </tr>
+          <tr ng-repeat="x in names | orderBy:myOrderBy">
+          <td>{{$index+1}}</td>
+          <td>{{ x.state }}</td>
+          <td>{{ x.Capital }}</td>
+          <td>{{ x.Population_Density }}</td>
+          <td>{{ x.Area }}</td>
+          <td>{{ x.Avg_Temp }}</td>
+          <td>{{ x.Min_Temp }}</td>
+          <td>{{ x.Max_Temp}}</td>
+        </tr>
+      </table>
+    </div>
+        
+<script>
+var app = angular.module('myApp', []);
+  app.controller('customersCtrl', function($scope,$http) {
+      $http.get("Data.json")
+          .then(function(response) {
+              $scope.names = response.data;
+               
+    });
+  $scope.orderByMe = function(x) {
+    $scope.myOrderBy = x;
+    }
+});
+
+</script> 
+    
+</body>
+</html>
