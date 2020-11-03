@@ -1,0 +1,35 @@
+var app = angular.module('myApp',[]);
+
+app.provider('date',function(){
+    var greet;
+    return {
+        
+        setGreeting:function(value){
+            greet =value;
+        },
+        $get: function(){
+            return {
+                showdate: function(){
+                    var date = new Date();
+                    return greet+" and the time is:"+date.getHours();
+                },
+                devshowdate: function(){
+                    var date = new Date();
+                    return date.getHours();
+                }
+            }
+        }
+    }
+})
+
+app.config(function(dateProvider){
+    var time = dateProvider.$get().devshowdate();
+    if(time>18 && time< 24){
+        dateProvider.setGreeting("hello bro its night");
+    }else{
+        dateProvider.setGreeting("hello bro its day");
+    }
+})
+app.controller('myctrl',function($scope, date){
+   $scope.greetMessage = date.showdate();
+});
