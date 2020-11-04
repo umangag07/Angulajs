@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myScopeApp" ng-controller="myctrl">
+        Type:<input type="text" ng-model="message"><br>
+        <h1>You Wrote{{message}}</h1>
+        
+    </div>
+    
+   <script>
+       var app = angular.module('myScopeApp',[]);
+       app.controller('myctrl',function($scope){
+           $scope.counter = 0;
+           $scope.$watch('message',function(newValue, oldValue){
+              console.log("Neew Value"+newValue);
+              console.log("oldvaue"+oldValue);
+              $scope.counter +=1;
+              console.log($scope.counter);
+           })
+         
+       });
+   </script>
+</body>
+</html>
